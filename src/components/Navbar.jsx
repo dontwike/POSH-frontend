@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="container flex justify-between items-center py-[10px]">
+      <div className="flex justify-between items-center py-[10px]">
         <a href="/">
           <h1 className="text-xl font-bold">POSH</h1>
         </a>
