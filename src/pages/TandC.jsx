@@ -90,7 +90,7 @@ const TandC = () => {
   ];
 
   return (
-    <div className="max-w-4xl p-8 text-gray-900">
+    <div className="max-w-4xl p-8 text-gray-900 ">
       <h1 className="text-3xl font-extrabold uppercase mb-4">
         TERMS & CONDITION
       </h1>

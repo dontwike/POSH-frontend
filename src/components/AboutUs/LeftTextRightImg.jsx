@@ -1,4 +1,5 @@
 import React from "react";
+import ImageComp from "../ImageComp";
 
 const LeftTextRightImg = (props) => {
   return (
@@ -25,13 +26,8 @@ const LeftTextRightImg = (props) => {
             and new.
           </p>
         </div>
-        <div className="relative">
-          <img
-            src={props.img1}
-            alt="About us"
-            className="w-full h-auto object-cover"
-          />
-        </div>
+        
+        <ImageComp src={props.img1} alt="About us" />
       </div>
     </div>
   );

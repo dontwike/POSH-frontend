@@ -1,21 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Collection from "../components/Home/Collection";
+import { imgData } from "../Data";
 
 const ProductPage = () => {
-  const imgData = [
-    {
-      src: "../../public/Shop_1.webp",
-      alt: "Product Image",
-    },
-    {
-      src: "../../public/Shop_2.webp",
-      alt: "Product Image",
-    },
-    {
-      src: "../../public/Shop_3.webp",
-      alt: "Product Image",
-    },
-  ];
+  const [selectedSize, setSelectedSize] = useState(null);
+
+  useEffect(() => {
+    if(selectedSize) {
+      console.log(selectedSize);
+    }
+  }, [selectedSize])
+
 
   return (
     <div>
@@ -46,14 +41,20 @@ const ProductPage = () => {
               {["XS", "S", "M", "L", "XL", "XXL"].map((size) => (
                 <button
                   key={size}
-                  className="border px-4 py-2 text-sm hover:bg-black hover:text-white transition"
+                  id="sizebtn"
+                  className={`border px-4 py-2 text-sm transition ${
+                    selectedSize === size
+                      ? "bg-black text-white"
+                      : "hover:bg-black hover:text-white"
+                  }`}
+                  onClick={() => setSelectedSize(size)}
                 >
                   {size}
                 </button>
               ))}
             </div>
             <a
-              href="#"
+              href="/sizechart"
               className="text-sm text-gray-600 underline mt-2 inline-block"
             >
               Size Chart

@@ -22,16 +22,16 @@ const Footer = () => {
 
         {/* Middle Section - Social Media & Contact */}
         <div className="space-y-2">
-          <a href="#">
+          <a href="/#">
             <p>Instagram</p>
           </a>
-          <a href="#">
+          <a href="/#">
             <p>TikTok</p>
           </a>
-          <a href="#">
+          <a href="/#">
             <p>Pinterest</p>
           </a>
-          <a href="#">
+          <a href="/#">
             <p>Facebook</p>
           </a>
         </div>

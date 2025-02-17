@@ -1,3 +1,18 @@
+export const imgData = [
+  {
+    src: "../../public/Shop_1.webp",
+    alt: "Product Image",
+  },
+  {
+    src: "../../public/Shop_2.webp",
+    alt: "Product Image",
+  },
+  {
+    src: "../../public/Shop_3.webp",
+    alt: "Product Image",
+  },
+];
+
 export const products = [
     {
       id: 1,
