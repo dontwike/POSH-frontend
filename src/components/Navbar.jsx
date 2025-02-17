@@ -12,18 +12,23 @@ export default function Navbar() {
         <a href="/">
           <h1 className="text-xl font-bold">POSH</h1>
         </a>
-
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-[#666666] text-sm items-center justify-center">
+          <a href="/shop" className="hover:text-black">
+            Shop
+          </a>
+          <a href="/aboutus" className="hover:text-black">
+            About us
+          </a>
+          <a href="/contact" className="hover:text-black">
+            Contact
+          </a>
           <button
             className="hover:text-black flex items-center"
             onClick={() => setIsSearchOpen(!isSearchOpen)}
           >
-             Search
+            <Search size={18} />
           </button>
-          <a href="/shop" className="hover:text-black">Shop</a>
-          <a href="/aboutus" className="hover:text-black">About us</a>
-          <a href="/contact" className="hover:text-black">Contact</a>
           <a href="/cart" className="hover:text-black">
             <ShoppingCart size={18} />
           </a>
@@ -34,11 +39,18 @@ export default function Navbar() {
             <UserRound size={18} />
           </a>
         </div>
-
-        {/* Mobile Menu Button */}
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex flex-row md:hidden">
+          {/* Mobile Menu Button */}
+          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+          <button
+            className="hover:text-black flex items-center pl-5"
+            onClick={() => setIsSearchOpen(!isSearchOpen)}
+          >
+            <Search size={18} />
+          </button>{" "}
+        </div>
       </div>
 
       {/* Search Bar */}
@@ -56,15 +68,15 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md z-50 flex flex-col space-y-4 p-5">
-          <button
-            className="hover:text-black flex items-center"
-            onClick={() => setIsSearchOpen(!isSearchOpen)}
-          >
-             Search
-          </button>
-          <a href="/shop" className="hover:text-black">Shop</a>
-          <a href="/aboutus" className="hover:text-black">About us</a>
-          <a href="/contact" className="hover:text-black">Contact</a>
+          <a href="/shop" className="hover:text-black">
+            Shop
+          </a>
+          <a href="/aboutus" className="hover:text-black">
+            About us
+          </a>
+          <a href="/contact" className="hover:text-black">
+            Contact
+          </a>
           <a href="/wishlist" className="hover:text-black">
             <Heart size={18} />
           </a>
