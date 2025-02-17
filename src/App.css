@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&display=swap");
+
+h1 {
+  font-family: "Bebas Neue", serif;
+}
+
+body {
+  font-family: "Arimo", serif;
+  font-size: 14px;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
