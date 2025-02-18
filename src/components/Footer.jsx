@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-300 px-6 py-8">
-      <div className="container mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-gray-700 text-sm">
+    <footer className="bg-white border-t border-gray-300 px-6 py-4">
+      <div className="container mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-gray-700 text-sm pt-3">
         {/* Left Section - Navigation Links */}
         <div className="space-y-2">
           <a href="/shop">
@@ -47,7 +47,7 @@ const Footer = () => {
 
         {/* Right Section - POSH Logo (Moves below on xs/sm) */}
         <a href="/">
-          <h1 className="text-start text-5xl font-bold tracking-wide sm:text-center sm:col-span-1 md:col-span-1 text-black">
+          <h1 className="text-start text-5xl font-bold tracking-wide sm:text-start sm:col-span-1 md:col-span-1 text-black">
             POSH
           </h1>
         </a>

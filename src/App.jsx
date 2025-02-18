@@ -12,25 +12,38 @@ import ProductPage from "./pages/ProductPage";
 import Aboutus from "./pages/Aboutus";
 import SignIn from "./pages/SignIn";
 import Login from "./pages/Login";
+import SearchPage from "./pages/SearchPage";
+import OrderConfirmation from "./pages/OrderConfirmation";
+import Checkout from "./pages/Checkout";
+import Cart from "./pages/Cart";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="px-4 md:px-6">
+      <div className="flex flex-col min-h-screen px-4 md:px-6">
         <Navbar />
 
+        <div className="flex-grow">
         <Routes>
+          <Route path="*" element={<Error />} />
+
           <Route path={"/signin"} element={<SignIn />} />
           <Route path={"/login"} element={<Login />} />
+
           <Route path={"/home"} element={<Home />} />
           <Route path={"/"} element={<Home />} />
-          <Route path={"/contact"} element={<Contact />} />
+
+          <Route path="/search" element={<SearchPage />} />
           <Route path={"/tc"} element={<TandC />} />
-          <Route path="*" element={<Error />} />
+          <Route path={"/contact"} element={<Contact />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/confirm" element={<OrderConfirmation />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
+        </div>
         <Footer />
       </div>
     </BrowserRouter>
