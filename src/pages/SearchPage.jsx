@@ -10,14 +10,54 @@ export default function SearchPage() {
 
   // Mock data for search results
   const mockProducts = [
-    { id: 1, name: "Product A", description: "This is Product A", link:"shop/A" },
-    { id: 2, name: "Product B", description: "This is Product B", link:"shop/B" },
-    { id: 3, name: "Product C", description: "This is Product C", link:"shop/C" },
-    { id: 4, name: "Product D", description: "This is Product D", link:"shop/D" },
-    { id: 5, name: "Product E", description: "This is Product E", link:"shop/E" },
-    { id: 6, name: "Product F", description: "This is Product F", link:"shop/F" },
-    { id: 7, name: "Product G", description: "This is Product G", link:"shop/G" },
-    { id: 8, name: "Product H", description: "This is Product H", link:"shop/H" },
+    {
+      id: 1,
+      name: "Product A",
+      description: "This is Product A",
+      link: "shop/A",
+    },
+    {
+      id: 2,
+      name: "Product B",
+      description: "This is Product B",
+      link: "shop/B",
+    },
+    {
+      id: 3,
+      name: "Product C",
+      description: "This is Product C",
+      link: "shop/C",
+    },
+    {
+      id: 4,
+      name: "Product D",
+      description: "This is Product D",
+      link: "shop/D",
+    },
+    {
+      id: 5,
+      name: "Product E",
+      description: "This is Product E",
+      link: "shop/E",
+    },
+    {
+      id: 6,
+      name: "Product F",
+      description: "This is Product F",
+      link: "shop/F",
+    },
+    {
+      id: 7,
+      name: "Product G",
+      description: "This is Product G",
+      link: "shop/G",
+    },
+    {
+      id: 8,
+      name: "Product H",
+      description: "This is Product H",
+      link: "shop/H",
+    },
   ];
 
   // Extract search query from URL on initial load
@@ -72,10 +112,10 @@ export default function SearchPage() {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {searchResults.map((product) => (
             <a href={product.link}>
-            <div key={product.id} className="px-4 py-2">
-              <h1 className="text-2xl font-semibold">{product.name}</h1>
-              <p className="text-gray-600">{product.description}</p>
-            </div>
+              <div key={product.id} className="px-4 py-2">
+                <h1 className="text-2xl font-semibold">{product.name}</h1>
+                <p className="text-gray-600">{product.description}</p>
+              </div>
             </a>
           ))}
         </div>

@@ -6,11 +6,10 @@ const ProductPage = () => {
   const [selectedSize, setSelectedSize] = useState(null);
 
   useEffect(() => {
-    if(selectedSize) {
+    if (selectedSize) {
       console.log(selectedSize);
     }
-  }, [selectedSize])
-
+  }, [selectedSize]);
 
   return (
     <div>

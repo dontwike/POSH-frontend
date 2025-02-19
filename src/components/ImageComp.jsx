@@ -10,7 +10,9 @@ const ImageComp = (props) => {
       />
       {props.name ? (
         <a href={props.link}>
-          <p className="text-[#666666] mt-2 text-left hover:text-black">{props.name}</p>
+          <p className="text-[#666666] mt-2 text-left hover:text-black">
+            {props.name}
+          </p>
         </a>
       ) : null}
     </div>

@@ -101,7 +101,7 @@ const Checkout = () => {
           </form>
         </div>
 
-        <CartComp />   
+        <CartComp />
       </div>
     </div>
   );

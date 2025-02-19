@@ -16,6 +16,7 @@ import SearchPage from "./pages/SearchPage";
 import OrderConfirmation from "./pages/OrderConfirmation";
 import Checkout from "./pages/Checkout";
 import Cart from "./pages/Cart";
+import WishlistPage from "./pages/WishlistPage";
 
 const App = () => {
   return (
@@ -24,25 +25,26 @@ const App = () => {
         <Navbar />
 
         <div className="flex-grow">
-        <Routes>
-          <Route path="*" element={<Error />} />
+          <Routes>
+            <Route path="*" element={<Error />} />
 
-          <Route path={"/signin"} element={<SignIn />} />
-          <Route path={"/login"} element={<Login />} />
+            <Route path={"/signin"} element={<SignIn />} />
+            <Route path={"/login"} element={<Login />} />
 
-          <Route path={"/home"} element={<Home />} />
-          <Route path={"/"} element={<Home />} />
+            <Route path={"/home"} element={<Home />} />
+            <Route path={"/"} element={<Home />} />
 
-          <Route path="/search" element={<SearchPage />} />
-          <Route path={"/tc"} element={<TandC />} />
-          <Route path={"/contact"} element={<Contact />} />
-          <Route path="/product" element={<ProductPage />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/confirm" element={<OrderConfirmation />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
+            <Route path="/search" element={<SearchPage />} />
+            <Route path={"/tc"} element={<TandC />} />
+            <Route path={"/contact"} element={<Contact />} />
+            <Route path="/product" element={<ProductPage />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/aboutus" element={<Aboutus />} />
+            <Route path="/confirm" element={<OrderConfirmation />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/wishlist" element={<WishlistPage />} />
+          </Routes>
         </div>
         <Footer />
       </div>

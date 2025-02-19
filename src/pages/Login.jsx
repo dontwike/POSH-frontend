@@ -20,7 +20,6 @@ const Login = () => {
             </h1>
 
             <form action="#" className="mt-8 grid grid-cols-6 gap-6">
-
               <div className="col-span-6">
                 <InputFeild type="Email" />
               </div>
@@ -43,7 +42,6 @@ const Login = () => {
                   .
                 </p>
               </div>
-                
 
               <div className="col-span-6 sm:flex sm:flex-col sm:items-center sm:gap-4">
                 <button className="w-full inline-block shrink-0 rounded-md border bg-black px-12 py-3 text-sm font-medium text-white transition focus:ring-3 focus:outline-hidden">

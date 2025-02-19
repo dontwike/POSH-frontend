@@ -9,11 +9,15 @@ const LeftImgRightText = (props) => {
 
       {/* Right Side - Text */}
       <div className="flex flex-col justify-center lg:pl-5">
-        <h1 className="text-black mt-2 text-left text-[64px]">{props.heading}</h1>
+        <h1 className="text-black mt-2 text-left text-[64px]">
+          {props.heading}
+        </h1>
 
         <div className="text-[#666666] text-[14px]">
           {props.points.map((point, index) => (
-            <p className="text-[#666666] text-[14px]" key={index}>{point}</p>
+            <p className="text-[#666666] text-[14px]" key={index}>
+              {point}
+            </p>
           ))}
         </div>
       </div>

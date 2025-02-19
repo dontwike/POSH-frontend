@@ -28,7 +28,6 @@ const Aboutus = () => {
 
       <div className="pb-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
           <ImageComp
             src="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Shop collections"

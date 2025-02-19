@@ -26,7 +26,7 @@ const LeftTextRightImg = (props) => {
             and new.
           </p>
         </div>
-        
+
         <ImageComp src={props.img1} alt="About us" />
       </div>
     </div>

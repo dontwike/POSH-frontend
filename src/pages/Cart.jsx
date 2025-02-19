@@ -1,30 +1,10 @@
 import React from "react";
 import CartComp from "../components/CartComp";
 import { X } from "lucide-react";
+import { cartItems } from "../Data";
 
 const Cart = () => {
-  const cartItems = [
-    {
-      image: "../../../public/UC_1.webp",
-      name: "Kathe Velvet Floor Poul",
-      price: "$222",
-      size: "S",
-    },
-    {
-      image: "../../../public/UC_1.webp",
-      name: "Kathe Velvet Floor Poul",
-      price: "$222",
-      size: "S",
-    },
-    {
-      image: "../../../public/UC_1.webp",
-      name: "Kathe Velvet Floor Poul",
-      price: "$222",
-      size: "S",
-    },
-  ];
-
-  const sizes = ["S", "M", "L", "XL"]; 
+  const sizes = ["S", "M", "L", "XL"];
 
   return (
     <div className="w-full bg-white overflow-hidden my-10 lg:px-[100px]">
@@ -65,20 +45,28 @@ const Cart = () => {
                 </div>
 
                 <div className="right-0 w-full flex flex-col items-end h-full justify-between">
-                  <button>
-                    <X size={18}/>
+                  <button
+                    onClick={() => {
+                      handleRemoveItem(item);
+                    }}
+                  >
+                    <X size={18} />
                   </button>
 
                   {/* Move to Wishlist button */}
-                  <a className=" text-[#666666] hover:text-black text-sm mt-[75px]">
+                  <button
+                    className=" text-[#666666] hover:text-black text-sm mt-[75px]"
+                    onClick={() => {
+                      handleMoveToWishlist(item);
+                    }}
+                  >
                     Move to Wishlist
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
         <CartComp />
       </div>
     </div>

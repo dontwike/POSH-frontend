@@ -1,7 +1,7 @@
 import React from "react";
-import { shopData } from "../../Data";
+import { shopData } from "../Data";
 
-const ShopCollection = () => {
+const WishlistProdCard = ({ name }) => {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center">
       {shopData.map((product) => (
@@ -15,9 +15,15 @@ const ShopCollection = () => {
             alt={product.name}
             className="w-auto h-72 lg:h-auto object-contain"
           />
-          <div className="py-3">
+          <div className="py-2">
             <h3 className="text-gray-600 hover:text-black">{product.name}</h3>
             <p className="text-gray-600">{product.price}</p>
+          </div>
+
+          <div>
+            <button className="bg-black text-white w-full py-2">
+              View Product
+            </button>
           </div>
         </a>
       ))}
@@ -25,4 +31,4 @@ const ShopCollection = () => {
   );
 };
 
-export default ShopCollection;
+export default WishlistProdCard;
