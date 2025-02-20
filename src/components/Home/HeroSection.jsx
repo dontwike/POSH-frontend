@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative w-full h-[100vh] bg-cover bg-center bg-no-repeat mb-8 md:h-[120vh]"
+      className="relative w-full h-[100vh] bg-cover bg-center bg-no-repeat md:h-[120vh]"
       style={{ backgroundImage: "url('../../public/HeroSection.webp')" }}
     >
       <div className="absolute inset-0 bg-[#7B3F00] bg-opacity-30 flex items-center justify-start p-10">

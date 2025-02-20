@@ -1,10 +1,10 @@
 import React from "react";
-import { shopData } from "../Data";
+import { wishlistData } from "../Data";
 
 const WishlistProdCard = ({ name }) => {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center">
-      {shopData.map((product) => (
+      {wishlistData.map((product) => (
         <a
           href="/product"
           key={product.id}

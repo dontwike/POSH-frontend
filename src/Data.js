@@ -162,3 +162,30 @@ export const shopData = [
     img: "../../../public/NC_4.webp",
   },
 ];
+
+export const wishlistData = [
+  {
+    id: 1,
+    name: "Blue Puff Chair",
+    price: "$199.00",
+    img: "../../../public/NC_1.webp",
+  },
+  {
+    id: 2,
+    name: "Red Stroke Mirror",
+    price: "$189.00",
+    img: "../../../public/NC_2.webp",
+  },
+  {
+    id: 3,
+    name: "Blue Box",
+    price: "$329.00",
+    img: "../../../public/NC_3.webp",
+  },
+  {
+    id: 4,
+    name: "Red Coffee Table",
+    price: "$89.00",
+    img: "../../../public/NC_4.webp",
+  },
+]

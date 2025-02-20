@@ -3,7 +3,7 @@ import { shopData } from "../../Data";
 
 const ShopCollection = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 items-center pb-10">
       {shopData.map((product) => (
         <a
           href="/product"
