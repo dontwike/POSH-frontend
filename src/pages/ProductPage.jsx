@@ -30,8 +30,8 @@ const ProductPage = () => {
 
         {/* Right: Product Details */}
         <div className="sticky top-10 h-fit">
-          <h1 className="text-2xl font-bold">NEW COLLECTION 2024</h1>
-          <p className="text-lg font-semibold mt-1">$0.00</p>
+          <h1 className="text-3xl">NEW COLLECTION 2024</h1>
+          <p className="text-lg font-semibold mt-1">$222.2</p>
 
           {/* Size Selection */}
           <div className="mt-4">

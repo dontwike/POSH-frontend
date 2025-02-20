@@ -5,7 +5,7 @@ const shop = () => {
   return (
     <div className="pt-5">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-xl sm:text-3xl font-bold uppercase">
+        <h1 className="text-xl sm:text-3xl uppercase">
           New Collection 2024
         </h1>
       </div>

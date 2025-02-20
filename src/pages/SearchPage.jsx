@@ -104,7 +104,7 @@ export default function SearchPage() {
       </form>
 
       {/* Search Results */}
-      <h1 className="text-2xl font-bold mb-4">
+      <h1 className="text-3xl mb-4">
         Search Results for "{searchQuery}"
       </h1>
 

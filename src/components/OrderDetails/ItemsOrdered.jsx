@@ -26,8 +26,8 @@ const ItemsOrdered = () => {
         ))}
       </div>
       <div className="flex justify-center space-x-4 mt-4 gap-4">
-        <button className="border border-black py-1 px-7 md:py-3 md:px-12 ">Cancel Order</button>
-        <button className="bg-black text-white px-12 py-3">
+        <button className=" border font-semibold uppercase py-1 px-7 md:py-3 md:px-12 ">Cancel Order</button>
+        <button className="bg-black font-semibold text-white px-12 py-3">
           Get Help
         </button>
       </div>

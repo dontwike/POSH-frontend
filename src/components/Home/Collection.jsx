@@ -5,7 +5,7 @@ const Collection = (props) => {
   return (
     <section className="py-10">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-xl sm:text-3xl font-bold uppercase">
+        <h1 className="text-xl sm:text-3xl uppercase">
           {props.title}
         </h1>
         <a href="/shop" className="text-[#666666] hover:text-black">
