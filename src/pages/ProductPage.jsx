@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Collection from "../components/Home/Collection";
 import { imgData } from "../Data";
+import Heading from "../components/global/Heading";
 
 const ProductPage = () => {
   const [selectedSize, setSelectedSize] = useState(null);
@@ -30,7 +31,7 @@ const ProductPage = () => {
 
         {/* Right: Product Details */}
         <div className="sticky top-10 h-fit">
-          <h1 className="text-3xl">NEW COLLECTION 2024</h1>
+          <Heading heading={"NEW COLLECTION 2024"} />
           <p className="text-lg font-semibold mt-1">$222.2</p>
 
           {/* Size Selection */}

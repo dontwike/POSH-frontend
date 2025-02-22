@@ -1,12 +1,13 @@
 import React from "react";
 import CartComp from "../components/CartComp";
+import Heading from "../components/global/Heading";
 
 const Checkout = () => {
   return (
     <div className="w-full bg-white overflow-hidden my-10 lg:px-[80px]">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="md:col-span-2">
-          <h1 className="text-2xl font-bold mb-6">CHECKOUT</h1>
+          <Heading heading={"CHECKOUT"} />
           <h2 className="text-xl font-semibold mb-4">Shipping Information</h2>
           <form>
             <div className="mb-4">

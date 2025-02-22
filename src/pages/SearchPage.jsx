@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Search } from "lucide-react";
+import Heading from "../components/global/Heading";
 
 export default function SearchPage() {
   const location = useLocation();
@@ -104,9 +105,7 @@ export default function SearchPage() {
       </form>
 
       {/* Search Results */}
-      <h1 className="text-3xl mb-4">
-        Search Results for "{searchQuery}"
-      </h1>
+      <Heading heading={"Search Results for " + "' " + searchQuery + "'"} />
 
       {searchResults.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">

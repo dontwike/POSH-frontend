@@ -21,7 +21,7 @@ const OrderConfirmation = () => {
         </p>
       </div>
 
-      <button className="w-full inline-block shrink-0 rounded-md border bg-black px-12 py-3 text-sm font-medium text-white transition focus:ring-3 focus:outline-hidden">
+      <button className="w-full inline-block shrink-0 border bg-black px-12 py-3 text-sm font-medium text-white transition focus:ring-3 focus:outline-hidden">
         Order Details
       </button>
     </div>

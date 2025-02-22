@@ -1,10 +1,11 @@
 import React from "react";
+import SubHeading from "../global/SubHeading";
 
 const InfoSection = () => {
   return (
     <div>
       {/* Information Section */}
-      <h1 className="mb-2 text-2xl">Information</h1>
+      <SubHeading heading={"Information"} />
       <div className="grid grid-cols-2 gap-4">
         <p className="font-semibold">Email Address</p>
         <p className="text-gray-600">ritika.sharma@gmail.com</p>

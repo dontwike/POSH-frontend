@@ -1,9 +1,10 @@
 import React from "react";
+import SubHeading from "../global/SubHeading";
 
 const CartDetails = () => {
   return (
     <div className="max-w-4xl bg-white">
-      <h1 className="text-2xl mb-4">CART DETAILS</h1>
+      <SubHeading heading={"CART DETAILS"} />
 
       <div className="">
         <div className="grid grid-cols-2 gap-2">

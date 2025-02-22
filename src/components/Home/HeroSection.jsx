@@ -18,7 +18,7 @@ const HeroSection = () => {
           </p>
           <div className="w-10 h-1 bg-pink-500 my-4"></div>
           <button
-            className="mt-6 px-6 py-3 bg-white text-black font-semibold uppercase rounded-md hover:bg-gray-200 transition"
+            className="mt-6 px-6 py-3 bg-white text-black font-semibold uppercase hover:bg-gray-200 transition"
             onClick={() => {
               explore("/shop");
             }}

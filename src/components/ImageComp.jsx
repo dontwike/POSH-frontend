@@ -6,7 +6,7 @@ const ImageComp = (props) => {
       <img
         src={props.src}
         alt={props.alt}
-        className="w-full h-auto object-cover"
+        className="w-full h-auto object-contain"
       />
       {props.name ? (
         <a href={props.link}>

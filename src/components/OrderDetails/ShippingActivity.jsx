@@ -1,11 +1,12 @@
 import React from "react";
+import SubHeading from "../global/SubHeading";
 
 const ShippingActivity = () => {
   return (
     <div>
       {/* Shipping Activity */}
       <div className="mt-6">
-        <h1 className="mb-2 text-2xl">Shipping Activity</h1>
+        <SubHeading heading={"Shipping Activity"} />
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-3">
             <div>

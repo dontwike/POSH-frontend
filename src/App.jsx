@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
@@ -21,7 +21,7 @@ import OrderDeatils from "./pages/OrderDeatils";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="flex flex-col min-h-screen px-4 md:px-6">
         <Navbar />
 
@@ -50,7 +50,7 @@ const App = () => {
         </div>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 

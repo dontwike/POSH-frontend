@@ -15,7 +15,7 @@ const ShopCollection = () => {
             alt={product.name}
             className="w-auto h-72 lg:h-auto object-contain"
           />
-          <div className="py-3">
+          <div className="pt-3">
             <h3 className="text-gray-600 hover:text-black">{product.name}</h3>
             <p className="text-gray-600">{product.price}</p>
           </div>

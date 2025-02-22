@@ -2,15 +2,16 @@ import React from "react";
 import CartComp from "../components/CartComp";
 import { X } from "lucide-react";
 import { cartItems } from "../Data";
+import Heading from "../components/global/Heading";
 
 const Cart = () => {
   const sizes = ["S", "M", "L", "XL"];
 
   return (
-    <div className="w-full bg-white overflow-hidden my-10 lg:px-[100px]">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div className="w-full bg-white overflow-hidden my-10 lg:px-28">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-10">
         <div className="md:col-span-2">
-          <h1 className="text-2xl font-bold mb-6">YOUR CART</h1>
+          <Heading heading={"YOUR CART"} />
           {cartItems.map((item, index) => (
             <div
               className="w-full mx-auto bg-white overflow-hidden mb-4 border border-1 p-2"
@@ -22,7 +23,7 @@ const Cart = () => {
                   <img
                     src={item.image}
                     alt="Product"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
 
@@ -33,7 +34,7 @@ const Cart = () => {
                   <div className="flex items-center mb-2">
                     <select
                       id="size"
-                      className="border border-gray-300 px-2 py-1 focus:outline-none focus:border-blue-500"
+                      className="border bg-white border-gray-300 px-2 py-1 focus:border-gray-500"
                     >
                       {sizes.map((size, index) => (
                         <option key={index} value={size}>
@@ -55,7 +56,7 @@ const Cart = () => {
 
                   {/* Move to Wishlist button */}
                   <button
-                    className=" text-[#666666] hover:text-black text-sm mt-[75px]"
+                    className=" text-[#666666] hover:text-black text-sm mt-[70px]"
                     onClick={() => {
                       handleMoveToWishlist(item);
                     }}

@@ -1,5 +1,6 @@
 import React from "react";
 import InputFeild from "../components/InputFeild";
+import Heading from "../components/global/Heading";
 
 const Contact = () => {
   return (
@@ -15,9 +16,7 @@ const Contact = () => {
 
         <main className="flex items-center justify-center py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
           <div className="max-w-xl lg:max-w-3xl">
-            <h1 className="mt-6 text-2xl text-gray-900 sm:text-3xl md:text-3xl">
-              Contact
-            </h1>
+            <Heading heading={"Contact"} />
 
             <p className="mt-4 leading-relaxed text-gray-500">
               We’d love to hear from you!

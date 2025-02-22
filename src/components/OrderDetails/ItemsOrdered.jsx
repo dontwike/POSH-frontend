@@ -1,4 +1,5 @@
 import React from "react";
+import SubHeading from "../global/SubHeading";
 
 const ItemsOrdered = () => {
   const items = [
@@ -9,7 +10,7 @@ const ItemsOrdered = () => {
 
   return (
     <div className="w-full mt-10">
-      <h1 className="text-2xl mb-4">ITEMS IN YOUR ORDERS</h1>
+      <SubHeading heading={"ITEMS IN YOUR ORDERS"} />
       <div className="space-y-2">
         {items.map((item) => (
           <div
