@@ -89,7 +89,7 @@ export default function SearchPage() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container p-4">
       {/* Search Bar */}
       <form onSubmit={handleSearch} className="mb-8">
         <div className="flex items-center bg-gray-100 px-4 py-2 w-1/2 md:w-2/5">
@@ -105,7 +105,7 @@ export default function SearchPage() {
       </form>
 
       {/* Search Results */}
-      <Heading heading={"Search Results for " + "' " + searchQuery + "'"} />
+      <Heading heading={"Search Results for " + '" ' + searchQuery + ' "'} />
 
       {searchResults.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -119,7 +119,7 @@ export default function SearchPage() {
           ))}
         </div>
       ) : (
-        <p>No results found.</p>
+        <p className="text-gray-600">No results found.</p>
       )}
     </div>
   );

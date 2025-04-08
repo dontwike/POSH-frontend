@@ -10,7 +10,9 @@ html, body {
   height: 100%;
 }
 
-
+.profilebtn {
+  font-family: "Bebas Neue", serif;
+}
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
 .no-scrollbar::-webkit-scrollbar {

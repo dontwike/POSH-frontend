@@ -23,7 +23,7 @@ const ProductPage = () => {
                 key={index}
                 src={img.src}
                 alt={img.alt}
-                className="w-full object-cover mb-4"
+                className="w-full object-cover"
               />
             ))}
           </div>

@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section
       className="relative w-full h-[100vh] bg-cover bg-center bg-no-repeat md:h-[120vh]"
-      style={{ backgroundImage: "url('../../public/HeroSection.webp')" }}
+      style={{ backgroundImage: "url('https://res.cloudinary.com/davqmcelg/image/upload/v1744136552/Posh/HeroSection_o7k5go.webp')" }}
     >
       <div className="absolute inset-0 bg-[#7B3F00] bg-opacity-30 flex items-center justify-start p-10">
         <div className="max-w-lg text-white">

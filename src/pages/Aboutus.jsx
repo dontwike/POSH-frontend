@@ -8,7 +8,7 @@ import ImageComp from "../components/ImageComp";
 const Aboutus = () => {
   return (
     <div className="flex flex-col">
-      <div className="mb-5">
+      <div className="pb-5">
         <LeftImgRightText
           heading="About us"
           points={[
@@ -18,15 +18,15 @@ const Aboutus = () => {
           img1="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
       </div>
-      <div className="mb-5">
+      <div className="pb-5">
         <LeftTextRightImg img1="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
       </div>
 
-      <div className="mb-5">
+      <div className="pb-5">
         <BothSideImg img1="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
       </div>
 
-      <div className="mb-5">
+      <div className="pb-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ImageComp
             src="https://plus.unsplash.com/premium_photo-1676299910876-747eeb0c11dc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -34,9 +34,9 @@ const Aboutus = () => {
           />
 
           <div className="flex flex-col justify-center text-[#666666] text-[14px] pl-5">
-            <p className="mb-5">
+            <p className="pb-5">
               Our team is dedicated to offering personalized service <br /> and
-              design advice, ensuring you find the perfect pieces to <br /> suit
+              design advice, ensuring you find the perfect pieces <br /> to suit
               your style and home.
             </p>
             <p>

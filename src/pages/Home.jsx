@@ -13,8 +13,8 @@ const Home = () => {
         name2={"About us"}
         link1="shop"
         link2="aboutus"
-        img1="../../public/UC_1.webp"
-        img2="../../public/UC_2.webp"
+        img1="https://res.cloudinary.com/davqmcelg/image/upload/v1744136579/Posh/UC_1_iszwhn.webp"
+        img2="https://res.cloudinary.com/davqmcelg/image/upload/v1744136579/Posh/UC_2_x99kwc.webp"
       />
       <Collection title="Best Seller 2025" />
     </div>
